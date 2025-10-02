@@ -1,0 +1,158 @@
+[
+  {
+    "user": "hi",
+    "bot": "Hello! Welcome to TertiaryGuide. How can I help you today?"
+  },
+  {
+    "user": "How do I apply for university forms?",
+    "bot": "Go to the University Forms section on our site to find and apply for available forms. We provide step-by-step guidance. Thank you for your question!"
+  },
+  {
+    "user": "Can I track my application status?",
+    "bot": "Currently, you can track your application progress through the My Forms section. Thank you for your question!"
+  },
+  {
+    "user": "Do you have a blog?",
+    "bot": "Yes, we have a Blog Section where you can read tips, news, and updates about tertiary education. Thank you for your question!"
+  },
+  {
+    "user": "How do I contact support?",
+    "bot": "You can contact us via WhatsApp or email at info@tertiaryguide.com. Thank you for your question!"
+  },
+  {
+    "user": "What is the Short Message feature?",
+    "bot": "The Short Message feature provides quick updates and important notices for users. Thank you for your question!"
+  },
+  {
+    "user": "What is the Search Engine for?",
+    "bot": "Our Search Engine helps you find schools, programs, and resources quickly. Thank you for your question!"
+  },
+  {
+    "user": "What is the Schools List Table?",
+    "bot": "The Schools List Table displays a comprehensive list of tertiary institutions and their details. Thank you for your question!"
+  },
+  {
+    "user": "How do I use the FAQ section?",
+    "bot": "The FAQ section answers common questions about tertiary education and our services. Thank you for your question!"
+  },
+  {
+    "user": "Can I submit feedback?",
+    "bot": "Yes, you can submit feedback through our Contact Forms section. Thank you for your question!"
+  },
+  {
+    "user": "Is my data safe on Tertiary Guide?",
+    "bot": "We take your privacy seriously and use secure methods to protect your data. Thank you for your question!"
+  },
+  {
+    "user": "What makes Tertiary Guide different?",
+    "bot": "Tertiary Guide offers a unified platform for forms, guidance, and resources tailored to Ghanaian tertiary education. Thank you for your question!"
+  },
+  {
+    "user": "Can I get notifications about deadlines?",
+    "bot": "Yes, our Alerts feature keeps you updated on important deadlines and announcements. Thank you for your question!"
+  },
+  {
+    "user": "How do I log in?",
+    "bot": "Click the Login button at the top right and enter your credentials to access your dashboard. Thank you for your question!"
+  },
+  {
+    "user": "Can I reset my password?",
+    "bot": "Yes, use the Forgot Password link on the login page to reset your password. Thank you for your question!"
+  },
+  {
+    "user": "What is the About Us page for?",
+    "bot": "The About Us page shares our story, mission, and vision. Thank you for your question!"
+  },
+  {
+    "user": "How do I subscribe to the newsletter?",
+    "bot": "Enter your email in the Newsletter section at the bottom of the site to subscribe. Thank you for your question!"
+  },
+  {
+    "user": "Can I access Tertiary Guide on mobile?",
+    "bot": "Yes, our website is fully responsive and works on all devices. Thank you for your question!"
+  },
+  {
+    "user": "What is the Testimonials section?",
+    "bot": "The Testimonials section features feedback from users who have benefited from Tertiary Guide. Thank you for your question!"
+  },
+  {
+    "user": "How do I use the WASSCE Checker?",
+    "bot": "Go to the WASSCE Checker page, enter your details, and follow the instructions to check your results. Thank you for your question!"
+  },
+  {
+    "user": "Can I get help choosing a school?",
+    "bot": "Yes, Tertiary Guide provides resources and guidance to help you choose the right school. Thank you for your question!"
+  },
+  {
+    "user": "What is Tertiary Guide?",
+    "bot": "Tertiary Guide is your trusted companion for all things tertiary education. We empower your journey with resources, guidance, and up-to-date information. Thank you for your question!"
+  },
+  {
+    "user": "How do I check my WASSCE results?",
+    "bot": "You can check your WASSCE results using our WASSCE Checker service. Just visit the WASSCE Checker page from the main menu. Thank you for your question!"
+  },
+  {
+    "user": "Can parents use Tertiary Guide?",
+    "bot": "Absolutely! Tertiary Guide is designed for students, parents, and educators to make informed decisions about tertiary education. Thank you for your question!"
+  },
+  {
+    "user": "How do I get updates?",
+    "bot": "Subscribe to our newsletter at the bottom of the page to get the latest updates and tips! Thank you for your question!"
+  },
+  {
+    "user": "What services do you offer?",
+    "bot": "We provide information on university forms, WASSCE checkers, application guidance, and more to help you succeed in your tertiary journey. Thank you for your question!"
+  },
+  {
+    "user": "What is your mission?",
+    "bot": "Our mission is to empower students and parents with the right information and tools for tertiary education success. Thank you for your question!"
+  },
+  {
+    "user": "What is your vision?",
+    "bot": "To be the leading platform for tertiary education guidance and support in Ghana and beyond. Thank you for your question!"
+  },
+  {
+    "user": "How can I contact Tertiary Guide?",
+    "bot": "You can reach us via WhatsApp or email at info@tertiaryguide.com. Thank you for your question!"
+  },
+  {
+    "user": "Is Tertiary Guide free?",
+    "bot": "Most of our resources are free. Some premium services may require a fee, but you can access a lot of guidance at no cost. Thank you for your question!"
+  },
+  {
+    "user": "hello",
+    "bot": "Hello! Welcome to TertiaryGuide. How can I help you today?"
+  },
+  {
+    "user": "hey",
+    "bot": "Hello! Welcome to TertiaryGuide. How can I help you today?"
+  },
+  {
+    "user": "Tell me about your services",
+    "bot": "We provide information on university forms, WASSCE checkers, application guidance, and more to help you succeed in your tertiary journey. Thank you for your question!"
+  },
+  {
+    "user": "What is your about?",
+    "bot": "Tertiary Guide is your trusted companion for all things tertiary education. We empower your journey with resources, guidance, and up-to-date information. Thank you for your question!"
+  },
+  {
+    "user": "What is the meaning of life?",
+    "bot": "Sorry, the answer to your question is not in the services we offer. Please ask about our mission, vision, about, or the services we provide. Thank you for reaching out!"
+  },
+  {
+    "user": "hahahahha",
+    "bot": "Sorry, the answer to your question is not in the services we offer. Please ask about our mission, vision, about, or the services we provide. Thank you for reaching out!"
+  },
+  {
+    "user": "ji",
+    "bot": "Sorry, the answer to your question is not in the services we offer. Please ask about our mission, vision, about, or the services we provide. Thank you for reaching out!"
+  },
+  {
+    "user": "hi",
+    "bot": "Hello! Welcome to TertiaryGuide. How can I help you today? (Thank you for your question!)"
+  },
+  {
+    "user": "how can i buy ",
+    "bot": "Sorry, I couldn't find an answer for that. Please ask about our services, mission, vision, or features. Thank you for reaching out!"
+  }
+]
