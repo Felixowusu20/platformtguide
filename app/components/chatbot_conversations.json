@@ -154,5 +154,13 @@
   {
     "user": "how can i buy ",
     "bot": "Sorry, I couldn't find an answer for that. Please ask about our services, mission, vision, or features. Thank you for reaching out!"
+  },
+  {
+    "user": "hi",
+    "bot": "Hello! Welcome to TertiaryGuide. How can I help you today? (Thank you for your question!)"
+  },
+  {
+    "user": "how can i buy the forms",
+    "bot": "Tertiary Guide is your trusted companion for all things tertiary education. We empower your journey with resources, guidance, and up-to-date information. Thank you for your question! (Thank you for your question!)"
   }
 ]

@@ -4,16 +4,27 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import { FaBars, FaTimes, FaWhatsapp, FaHome, FaBook, FaUserFriends, FaUser, FaBell, FaRegNewspaper, FaBullhorn } from "react-icons/fa";
+import { FaBars, FaTimes, FaWhatsapp, FaHome, FaBook, FaUserFriends, FaRegNewspaper, FaBullhorn, FaBell } from "react-icons/fa";
+import {
+  SignInButton,
+  SignUpButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from '@clerk/nextjs';
+import { SignedIn as ClerkSignedIn } from "@clerk/nextjs";
 
 const navLinks = [
   { href: "/", label: "Home", icon: <FaHome size={20} /> },
-  { href: "/wassce-checker", label: "WASSCE", icon: <FaBook size={20} /> },
   { href: "/university-forms", label: "Forms", icon: <FaRegNewspaper size={20} /> },
-  { href: "/my-forms", label: "My Forms", icon: <FaUserFriends size={20} /> },
   { href: "/notifications", label: "Alerts", icon: <FaBell size={20} /> },
   { href: "/about", label: "Info", icon: <FaBullhorn size={20} /> },
 ];
+
+const protectedRoutes = [
+    { href: "/wassce-checker", label: "WASSCE", icon: <FaBook size={20} /> },
+    { href: "/my-forms", label: "My Forms", icon: <FaUserFriends size={20} /> }
+]
 
 const whatsappNumber = "233501234567"; // Replace with your WhatsApp number
 const whatsappLink = `https://wa.me/${whatsappNumber}`;
@@ -89,6 +100,29 @@ export default function Navbar() {
               </li>
             );
           })}
+        <ClerkSignedIn>
+                      {protectedRoutes.map((link) => {
+            const isActive = pathname === link.href;
+            return (
+              <li key={link.href} className="flex flex-col items-center group relative">
+                <Link
+                  href={link.href}
+                  className={`flex items-center gap-2 px-2 py-1.5 rounded-md transition-all duration-200 font-medium text-[16px] 
+                    ${isActive ? 'text-[#7c3aed]' : 'text-[#222]'}
+                    group-hover:text-[#7c3aed] hover:bg-[#f3f4f6]`}
+                  style={{ minWidth: 80, justifyContent: 'center' }}
+                >
+                  <span className="mr-1">{link.icon}</span>
+                  {link.label}
+                </Link>
+                {/* Active underline for current navlink */}
+                {isActive && (
+                  <span className="absolute left-0 right-0 -bottom-1 h-1 bg-[#7c3aed] rounded-full w-4/5 mx-auto transition-all duration-200" />
+                )}
+              </li>
+            );
+          })}
+        </ClerkSignedIn>
         </ul>
         {/* WhatsApp and Login for all screens */}
         <div className="flex items-center ml-auto gap-2">
@@ -101,12 +135,21 @@ export default function Navbar() {
           >
             <FaWhatsapp size={22} />
           </a>
-          <Link
-            href="/auth/login"
-            className="px-3 py-1.5 rounded-full bg-[#ff9800] text-[#1a237e] font-medium hover:bg-white hover:text-[#ff9800] transition-colors shadow border border-[#ff9800]"
-          >
-            Login
-          </Link>
+            <SignedOut>
+                <SignInButton>
+                    <button className="px-3 py-1.5 rounded-full bg-[#ff9800] text-[#1a237e] font-medium hover:bg-white hover:text-[#ff9800] transition-colors shadow border border-[#ff9800]">
+                        Login
+                    </button>
+                </SignInButton>
+                <SignUpButton>
+                    <button className="px-3 py-1.5 rounded-full bg-blue-500 text-white font-medium hover:bg-blue-600 transition-colors shadow border border-blue-500">
+                        Sign Up
+                    </button>
+                </SignUpButton>
+            </SignedOut>
+            <SignedIn>
+                <UserButton />
+            </SignedIn>
           {/* Hamburger menu for mobile */}
           <button
             className="md:hidden p-3 rounded focus:outline-none focus:ring-2 focus:ring-[#7c3aed] bg-white shadow"
@@ -139,6 +182,24 @@ export default function Navbar() {
               </Link>
             );
           })}
+        <ClerkSignedIn>
+            {protectedRoutes.map((link) => {
+                const isActive = pathname === link.href;
+                return (
+                <Link
+                    key={link.href}
+                    href={link.href}
+                    className={`flex flex-row items-center justify-start w-full py-4 px-4 gap-3 transition-all duration-200 ${isActive ? 'bg-[#f5f3ff]' : ''}`}
+                    onClick={() => setMenuOpen(false)}
+                >
+                    <span className={`text-lg ${isActive ? 'text-[#7c3aed]' : 'text-[#222]'}`}>{link.icon}</span>
+                    <span className={`text-base font-medium ${isActive ? 'text-[#7c3aed]' : 'text-[#222]'}`}>{link.label}</span>
+                    {/* Active bar */}
+                    {isActive && <span className="block absolute left-0 bottom-0 w-full h-1 bg-[#7c3aed] rounded-b-lg mt-2" />}
+                </Link>
+                );
+            })}
+        </ClerkSignedIn>
         </div>
       )}
       {/* Overlay for mobile sidebar */}

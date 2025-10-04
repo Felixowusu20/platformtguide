@@ -1,12 +1,12 @@
 "use client";
 
-
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 const schools = [
   {
     name: "Holy Spirit College",
-    logo: "/holyspirit.png",
+    logo: "/hero1.jpg",
     verified: true,
     deadline: "30 Sep, 2025",
     handle: "Get Form",
@@ -14,7 +14,7 @@ const schools = [
   },
   {
     name: "University of Cape Coast",
-    logo: "/ucc.png",
+    logo: "/hero4.jpg",
     verified: false,
     deadline: "30 Oct, 2025",
     handle: "Get Form",
@@ -46,7 +46,7 @@ const schools = [
   },
   {
     name: "University of Energy and Natural Resources",
-    logo: "/uenr.png",
+    logo: "/hero1.jpg",
     verified: false,
     deadline: "15 Jan, 2026",
     handle: "Get Form",
@@ -78,7 +78,7 @@ export default function SchoolsListTable() {
               style={{ borderBottom: '1px solid #e5e7eb' }}
             >
               <td className="py-2 sm:py-3 px-2 sm:px-4 flex items-center gap-2 min-w-[120px] sm:min-w-[220px] whitespace-normal break-words">
-                <img src={s.logo} alt={s.name} className="h-7 w-7 sm:h-8 sm:w-8 rounded bg-white border" />
+                <Image src={s.logo} alt={s.name} className="h-7 w-7 sm:h-8 sm:w-8 rounded bg-white border" width={32} height={32} unoptimized/>
                 <span className="font-medium text-[#22305a] text-xs sm:text-sm md:text-base flex items-center gap-1">
                   {s.name}
                   {s.verified && (

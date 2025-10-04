@@ -1,8 +1,9 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const blogs = [
   {
-    image: "/blog1.jpg",
+    image: "/hero1.jpg",
     title: "Checking Your WASSCE Results: A Step-by-Step Guide",
     excerpt: {
       short: "How to check your WASSCE results online, step by step.",
@@ -11,7 +12,7 @@ const blogs = [
     link: "/blog/checking-wassce-results",
   },
   {
-    image: "/blog2.jpg",
+    image: "/hero4.jpg",
     title: "Keeping Your Cool While Awaiting Your WASSCE Results",
     excerpt: {
       short: "Tips for staying calm while waiting for your WASSCE results.",
@@ -20,7 +21,7 @@ const blogs = [
     link: "/blog/keeping-cool-wassce-results",
   },
   {
-    image: "/blog3.jpg",
+    image: "/hero1.jpg",
     title:
       "Be Part of Africa’s Tech Future: Join the Ultimate Tech Quiz as a Sponsor, Mentor, Partner, or Volunteer!",
     excerpt: {
@@ -44,10 +45,12 @@ export default function BlogSection() {
             key={b.title}
             className="flex flex-col bg-white border border-[#e5e7eb] rounded-2xl shadow-md hover:shadow-xl transition-shadow h-full overflow-hidden"
           >
-            <img
+            <Image
               src={b.image}
               alt={b.title}
               className="w-full h-40 sm:h-44 object-cover rounded-t-2xl"
+              width={400}
+              height={176}
             />
             <div className="flex flex-col flex-1 p-3 sm:p-4">
               <Link
